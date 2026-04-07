@@ -49,6 +49,26 @@
 
 ---
 
+## 独立技能
+
+### onepager
+
+将文字、Markdown 或 PDF 内容转化为高品质 OnePage 信息图（单页可视化海报）。
+
+- **多尺寸**：纵向长图、横向宽图 (16:9)、正方形 (1:1)
+- **6 种设计风格**：科技极客、现代商务、清新自然、新拟态、孟菲斯、软 UI
+- **3 级信息密度**：低/中/高，自动改写内容匹配版式
+- **智能图表匹配**：根据内容逻辑自动选择流程图/结构图/架构图
+- **HTML → PNG**：内置 Playwright 截图，自动转高清图片
+
+使用方式：运行 `./install.sh` 一键安装到 Claude Code 和 OpenClaw，或手动复制到 `.claude/skills/` / `.openclaw/skills/` 目录下。
+
+来源：[ZeroxZhang/onepager](https://github.com/ZeroxZhang/onepager) · Apache 2.0
+
+详见 [skills/onepager/](skills/onepager/)
+
+---
+
 ## 项目结构
 
 ```
@@ -56,7 +76,7 @@ agent-kit/
 ├── .claude-plugin/
 │   └── marketplace.json         ← marketplace 索引
 ├── plugins/
-│   └── spec-kit/                ← 工程技能包
+│   └── spec-kit/                ← 工程技能包（marketplace 分发）
 │       ├── .claude-plugin/
 │       │   └── plugin.json
 │       ├── commands/            ← 7 个斜杠命令
@@ -65,12 +85,19 @@ agent-kit/
 │       ├── references/          ← 4 个参考清单
 │       ├── hooks/               ← 会话生命周期钩子
 │       └── docs/                ← 工具配置指南
+├── skills/
+│   └── onepager/                ← 文字转 OnePage 信息图
+│       ├── SKILL.md
+│       ├── references/
+│       ├── scripts/
+│       └── assets/
 ├── README.md
 ├── CLAUDE.md
 └── LICENSE
 ```
 
-未来可在 `plugins/` 下添加更多插件。
+- `plugins/` — 通过 marketplace 体系分发的插件
+- `skills/` — 独立维护的技能，不走插件注册，直接使用
 
 ---
 
