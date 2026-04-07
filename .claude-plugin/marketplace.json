@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "agent-kit",
+  "description": "AI Agent 工具包——技能、钩子、插件的集合",
+  "owner": {
+    "name": "Ken-Chy129"
+  },
+  "plugins": [
+    {
+      "name": "spec-kit",
+      "description": "中文版工程技能包，覆盖规格、计划、构建、测试、审查、发布全流程",
+      "source": "./plugins/spec-kit",
+      "category": "development",
+      "homepage": "https://github.com/Ken-Chy129/agent-kit"
+    }
+  ]
+}

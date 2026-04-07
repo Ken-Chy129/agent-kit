@@ -1,0 +1,12 @@
+{
+  "name": "spec-kit",
+  "description": "中文版工程技能包——从规格到发布的完整工作流，包含 20 个技能、7 个命令、3 个 Agent 人格",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ken-Chy129"
+  },
+  "homepage": "https://github.com/Ken-Chy129/agent-kit",
+  "repository": "https://github.com/Ken-Chy129/agent-kit",
+  "license": "MIT",
+  "commands": "./commands"
+}
