@@ -1,0 +1,12 @@
+{
+  "name": "claude-copy-as-image",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Claude Code skill: copy response as a beautiful image to clipboard",
+  "license": "MIT",
+  "author": "chyroc",
+  "dependencies": {
+    "marked": "^18.0.0",
+    "playwright": "^1.59.1"
+  }
+}
